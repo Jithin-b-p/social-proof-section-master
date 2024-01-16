@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="This is the review section of a product"
+    />
 
     <link
       rel="icon"
@@ -11,51 +15,115 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    10,000+ of our users love our products.
+    <h1 class="sr-only">This is a user review section</h1>
+    <main>
+      <section class="customer-review">
+        <!-- title section -->
+        <div class="flex flex-col title-n-review">
+          <div class="customer-review__title">
+            <h2 class="customer-review__title--heading">
+              10,000+ of our users love our products.
+            </h2>
+            <p class="customer-review__title--summary">
+              We only provide great products combined with excellent customer
+              service. See what our satisfied customers are saying about our
+              services.
+            </p>
+          </div>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+          <!-- rating section -->
+          <div class="flex flex-col customer-review__ratings">
+            <div class="flex flex-col rating">
+              <div class="flex star-rating">
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+              </div>
+              <p class="rating-report">Rated 5 Stars in Reviews</p>
+            </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+            <div class="flex flex-col rating">
+              <div class="flex star-rating">
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+              </div>
+              <p class="rating-report">Rated 5 Stars in Report Guru</p>
+            </div>
+
+            <div class="flex flex-col rating">
+              <div class="flex star-rating">
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+                <img src="./assets/images/icon-star.svg" alt="star" />
+              </div>
+              <p class="rating-report">Rated 5 Stars in BestTech</p>
+            </div>
+          </div>
+        </div>
+        <!-- user review  -->
+
+        <div class="flex customer-review__custom-reviews">
+          <div class="flex flex-col customer-review__custom-reviews--user">
+            <div class="flex user-details">
+              <img src="./assets/images/image-colton.jpg" alt="user photo" />
+              <div class="flex flex-col user">
+                <span class="user-name">Colton Smith</span
+                ><span class="user-status">Verified Buyer</span>
+              </div>
+            </div>
+            <blockquote class="user-response">
+              &quot; We needed the same printed design as the one we had ordered
+              a week prior. Not only did they find the original order, but we
+              also received it in time. Excellent! &quot;
+            </blockquote>
+          </div>
+          <div class="flex flex-col customer-review__custom-reviews--user">
+            <div class="flex user-details">
+              <img src="./assets/images/image-irene.jpg" alt="user photo" />
+              <div class="flex flex-col user">
+                <span class="user-name">Irene Roberts</span
+                ><span class="user-status">Verified Buyer</span>
+              </div>
+            </div>
+            <blockquote class="user-response">
+              &quot; Customer service is always excellent and very quick turn
+              around. Completely delighted with the simplicity of the purchase
+              and the speed of delivery. &quot;
+            </blockquote>
+          </div>
+          <div class="flex flex-col customer-review__custom-reviews--user">
+            <div class="flex user-details">
+              <img src="./assets/images/image-anne.jpg" alt="user photo" />
+              <div class="flex flex-col user">
+                <span class="user-name">Anne Wallace</span
+                ><span class="user-status">Verified Buyer</span>
+              </div>
+            </div>
+            <blockquote class="user-response">
+              &quot; Put an order with this company and can only praise them for
+              the very high standard. Will definitely use them again and
+              recommend them to everyone! &quot;
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,30 @@
+:root {
+  --ff-primary: "League Spartan", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --clr-primary-100: 333, 80%, 67%;
+  --clr-primary-400: 300, 43%, 22%;
+
+  --clr-secondary-200: 303, 10%, 53%;
+
+  --clr-neutral-100: 0, 0%, 100%;
+  --clr-neutral-200: 300, 24%, 96%;
+
+  --fs-400: 0.9375rem;
+  --fs-500: 1rem;
+}
+
+body {
+  min-height: 100svh;
+}
+
+main {
+  min-height: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

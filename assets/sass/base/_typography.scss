@@ -1,0 +1,66 @@
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+}
+
+.customer-review {
+  &__title {
+    text-align: center;
+
+    @media only screen and (min-width: 80em) {
+      text-align: left;
+    }
+    &--heading {
+      font-size: 2.8rem;
+      font-weight: var(--fw-bold);
+      line-height: 0.8;
+      color: hsl(var(--clr-primary-400));
+
+      @media only screen and (min-width: 80em) {
+        font-size: 3.2rem;
+        line-height: 1;
+      }
+    }
+
+    &--summary {
+      font-size: 1.12rem;
+      line-height: 1.35;
+      color: hsl(var(--clr-secondary-200));
+    }
+  }
+
+  &__ratings {
+    & .rating {
+      background-color: hsl(var(--clr-neutral-200));
+    }
+
+    & .rating-report {
+      font-size: 1.1rem;
+      font-weight: var(--fw-bold);
+      color: hsl(var(--clr-primary-400));
+      text-align: center;
+    }
+  }
+
+  &__custom-reviews {
+    color: hsl(var(--clr-neutral-100));
+    &--user {
+      font-size: 1.05rem;
+      background-color: hsl(var(--clr-primary-400));
+      & .user-details {
+        font-size: 1.05rem;
+        & .user-name {
+          font-weight: var(--fw-bold);
+        }
+
+        & .user-status {
+          color: hsl(var(--clr-primary-100));
+        }
+      }
+
+      & .user-response {
+        line-height: 1.3;
+      }
+    }
+  }
+}
